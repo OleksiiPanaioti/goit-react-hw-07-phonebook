@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Contacts } from './contactsList/ContactsList';
-import { Filter } from './Filter/Filter';
+import { Filter } from './FilterPack/Filter';
 
-import { PhoneForm } from './Form/FormInput';
+import { PhoneForm } from './FormInput/FormInput';
 import { GlobalStyle } from './GlobalStyles';
 import { Layout } from './Layout/Layout';
 
