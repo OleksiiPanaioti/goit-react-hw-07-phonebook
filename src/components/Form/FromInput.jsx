@@ -37,7 +37,7 @@ const FormSchema = yup.object().shape({
     .required('Required field!'),
 });
 
-export const PhonebookForm = ({ onSave }) => {
+export const PhoneForm = ({ onSave }) => {
   const handleSubmit = (values, { resetForm }) => {
     console.log(values);
 
@@ -62,7 +62,7 @@ export const PhonebookForm = ({ onSave }) => {
           <Field type="tel" name="number" required />
           <ErrorMessage name="number" component="span" />
         </FormField>
-        <ButtonSubmitDelete type="submit">Add contact</ButtonSubmitDelete>
+        <ButtonSubmitDelete type="submit">Добавити контакт</ButtonSubmitDelete>
       </Form>
     </Formik>
   );

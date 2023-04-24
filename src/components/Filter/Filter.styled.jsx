@@ -9,9 +9,5 @@ export const Label = styled.label`
 export const Input = styled.input`
   width: 300px;
   border-radius: 4px;
-  &:hover,
-  &:focus {
-    border: 3px solid #20a033;
-    color: #2f6117;
-  }
+  border: none;
 `;
