@@ -1,11 +1,10 @@
-import React from 'react';
+import { Formik, Field } from 'formik';
 import {
   Form,
   FormField,
   ErrorMessage,
   ButtonSubmitDelete,
 } from './FormInput.styled';
-import { Formik, Field } from 'formik';
 import * as yup from 'yup';
 import { nanoid } from 'nanoid';
 
