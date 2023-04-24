@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Contacts } from './contactsList/ContactsList';
 import { Filter } from './Filter/Filter';
 
-import { PhoneForm } from './form/FromInput';
+import { PhoneForm } from './form/FormInput';
 import { GlobalStyle } from './GlobalStyles';
 import { Layout } from './Layout/Layout';
 
