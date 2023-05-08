@@ -1,16 +1,16 @@
-import PropTypes from 'prop-types';
-import { Info } from './massage.styled';
+// import PropTypes from 'prop-types';
+// import { Info } from './massage.styled';
 
-const Massage = ({ info }) => {
-  return (
-    <>
-      <Info>{info}</Info>
-    </>
-  );
-};
+// const Massage = ({ info }) => {
+//   return (
+//     <>
+//       <Info>{info}</Info>
+//     </>
+//   );
+// };
 
-Massage.propTypes = {
-  info: PropTypes.string.isRequired,
-};
+// Massage.propTypes = {
+//   info: PropTypes.string.isRequired,
+// };
 
-export default Massage;
+// export default Massage;
