@@ -1,34 +1,19 @@
-import PropTypes from 'prop-types';
-import { useDispatch, useSelector } from 'react-redux';
-import { nanoid } from 'nanoid';
-import { FilterContainer, FilterInput } from './Filter.styled';
-
-// import { getFilter } from '../../redux/contactsSelectors';
-import { getFilter } from 'redux/contactsSelector';
-import { filterSlice } from 'redux/myContacts/contactsSlice';
-const filterId = nanoid();
-
+import { useDispatch} from 'react-redux';
+import { Label, Input } from './Filter.styled';
+import { filterContacts } from 'redux/filterSlice';
+import { useFilter } from 'redux/hooks';
+  
 export const Filter = () => {
-  const value = useSelector(getFilter);
   const dispatch = useDispatch();
+  const filter = useFilter();
   return (
-    <FilterContainer>
-      <label> Find contacts by name </label>
-      <FilterInput
-        type="text"
-        name="filter"
-        value={value}
-        onChange={e =>
-          dispatch(filterSlice.actions.changeFilter(e.target.value))
-        }
-        id={filterId}
-        placeholder="enter contacts' name"
-      />
-    </FilterContainer>
-  );
+    <Label>
+      Find contact by name
+      <Input type="text" value={filter} onChange={({ currentTarget: { value } }) => {
+          dispatch(filterContacts(value));
+        }} />
+    </Label>
+  )
+  
 };
 
-Filter.propTypes = {
-  filter: PropTypes.string,
-  onFilter: PropTypes.func,
-};
