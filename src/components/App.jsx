@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchContacts } from 'redux/operations';
 import { ThreeDots } from 'react-loader-spinner';
-import { Contacts } from './contacts/contacts';
+import { Contacts } from './Contacts/Contacts';
 import { Filter } from './filter/filter';
 import { PhonebookForm } from './Form/Form';
 import { GlobalStyle } from './GlobalStyle';
