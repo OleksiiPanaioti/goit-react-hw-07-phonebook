@@ -8,7 +8,7 @@ import { PhonebookForm } from './Form/Form';
 import { GlobalStyle } from './GlobalStyle';
 import { Layout } from './Layout/Layout';
 import { useError, useIsLoading } from 'redux/hooks';
-import { Filter } from './Filter/filter';
+import { Filter } from './FilterFilter/FilterFilter';
 
 export const App = () => {
   const dispatch = useDispatch();
