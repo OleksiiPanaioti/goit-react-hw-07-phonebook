@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { ContactButton, ContactItem, ContactList } from './Contacts.styled';
+import { ContactButton, ContactItem, ContactList } from './contacts.styled';
 import { deleteContact } from 'redux/operations';
 import { useVisibleContacts } from 'redux/hooks';
 
