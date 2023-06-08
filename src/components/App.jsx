@@ -27,7 +27,7 @@ export const App = () => {
           height="80"
           width="80"
           radius="9"
-          color="#4fa94d"
+          color="#4d63a9"
           ariaLabel="three-dots-loading"
           wrapperStyle={{}}
           wrapperClassName=""

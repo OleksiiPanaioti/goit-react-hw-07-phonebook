@@ -11,7 +11,7 @@ export const Input = styled.input`
   border-radius: 4px;
   &:hover,
   &:focus {
-    border: 3px solid #20a033;
-    color: #2f6117;
+    border: 3px solid #2620a0;
+    color: #211761;
   }
 `;
