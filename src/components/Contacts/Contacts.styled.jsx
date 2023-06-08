@@ -11,7 +11,7 @@ export const ContactItem = styled.li`
 `;
 export const ContactButton = styled.button`
   margin-left: 24px;
-  width: 80px;
+  width: 120px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #ced6ce;
   border-radius: 4px;
