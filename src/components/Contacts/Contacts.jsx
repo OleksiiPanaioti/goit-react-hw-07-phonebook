@@ -1,8 +1,7 @@
-import { useDispatch} from 'react-redux';
-import { ContactButton, ContactItem, ContactList } from './Contacts.styled';
+import { useDispatch } from 'react-redux';
+import { ContactButton, ContactItem, ContactList } from './contacts.styled';
 import { deleteContact } from 'redux/operations';
 import { useVisibleContacts } from 'redux/hooks';
-
 
 export const Contacts = () => {
   const dispatch = useDispatch();
@@ -10,18 +9,19 @@ export const Contacts = () => {
 
   return (
     <ContactList>
-      {visibleContacts && visibleContacts.map(({ id, name, number }) => (
-        <ContactItem key={id}>
-          {name}: {number}
-          <ContactButton
-            type="button"
-            key={id}
-            onClick={() => dispatch(deleteContact(id))}
-          >
-            Delete
-          </ContactButton>
-        </ContactItem>
-      ))}
+      {visibleContacts &&
+        visibleContacts.map(({ id, name, number }) => (
+          <ContactItem key={id}>
+            {name}: {number}
+            <ContactButton
+              type="button"
+              key={id}
+              onClick={() => dispatch(deleteContact(id))}
+            >
+              Delete
+            </ContactButton>
+          </ContactItem>
+        ))}
     </ContactList>
   );
 };

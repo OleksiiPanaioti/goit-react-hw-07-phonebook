@@ -6,9 +6,9 @@ export const ContactList = styled.ul`
   gap: 12px;
 `;
 export const ContactItem = styled.li`
-    display:flex;
-    justify-content: space-between;
-`
+  display: flex;
+  justify-content: space-between;
+`;
 export const ContactButton = styled.button`
   margin-left: 24px;
   width: 80px;
