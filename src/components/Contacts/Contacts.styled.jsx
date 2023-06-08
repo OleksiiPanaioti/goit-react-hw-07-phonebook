@@ -13,8 +13,8 @@ export const ContactButton = styled.button`
   margin-left: 24px;
   width: 120px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: #ced6ce;
-  border-radius: 4px;
+  /* background-color: #ced6ce; */
+  border-radius: 8px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {

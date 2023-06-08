@@ -8,7 +8,8 @@ export const Label = styled.label`
 `;
 export const Input = styled.input`
   width: 320px;
-  border-radius: 4px;
+  border-radius: 8px;
+  border: 1px solid #2620a0;
   &:hover,
   &:focus {
     border: 3px solid #2620a0;

@@ -1,7 +1,7 @@
 import { Formik, Field } from 'formik';
 import { Form, FormField, ErrorMessage, FormButton } from './Form.styled';
 import * as Yup from 'yup';
-import { useDispatch} from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addContact } from 'redux/operations';
 import { useContacts } from 'redux/hooks';
 
@@ -31,7 +31,11 @@ export const PhonebookForm = () => {
   const contacts = useContacts();
 
   const handleSubmit = (values, actions) => {
-    if (contacts.find(({ name }) => name.toLowerCase() === values.name.toLowerCase())) {
+    if (
+      contacts.find(
+        ({ name }) => name.toLowerCase() === values.name.toLowerCase()
+      )
+    ) {
       alert(` ${values.name} is already in contacts.`);
       actions.resetForm();
       return;
@@ -44,21 +48,21 @@ export const PhonebookForm = () => {
     dispatch(addContact(values));
     actions.resetForm();
   };
- 
+
   return (
     <Formik
       initialValues={initialValues}
       validationSchema={PhonebookSchema}
       onSubmit={handleSubmit}
     >
-      <Form autoComplete='off'>
+      <Form autoComplete="off">
         <FormField htmlFor="name">
-          Name
+          name
           <Field name="name" required />
           <ErrorMessage name="name" component="span" />
         </FormField>
         <FormField htmlFor="number">
-          Number
+          phone
           <Field type="tel" name="number" required />
           <ErrorMessage name="number" component="span" />
         </FormField>
