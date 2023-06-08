@@ -3,11 +3,12 @@ import { useDispatch } from 'react-redux';
 import { fetchContacts } from 'redux/operations';
 import { ThreeDots } from 'react-loader-spinner';
 import { Contacts } from './Contacts/Contacts';
-import { Filter } from './filter/filter';
+// import { Filter } from './Filter/filter';
 import { PhonebookForm } from './Form/Form';
 import { GlobalStyle } from './GlobalStyle';
 import { Layout } from './Layout/Layout';
 import { useError, useIsLoading } from 'redux/hooks';
+import { Filter } from './Filter/filter';
 
 export const App = () => {
   const dispatch = useDispatch();
